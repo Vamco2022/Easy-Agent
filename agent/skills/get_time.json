@@ -1,0 +1,9 @@
+{
+  "type": "function",
+  "function": {
+    "name": "get_time",
+    "description": "get the current time of system",
+    "parameters": {
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "function",
+  "function": {
+    "name": "init_env",
+    "description": "build a virtual system, allow model to do some coding and File control. If created completely, It will return a ID.",
+    "parameters": {
+    }
+  }
+}

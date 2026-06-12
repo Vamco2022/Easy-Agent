@@ -1,0 +1,24 @@
+{
+  "type": "function",
+  "function": {
+    "name": "env_command_readFile",
+    "description": "Read a txt or code file that you input. The root path is /.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID of the virtual system"
+        },
+        "path": {
+          "type": "string",
+          "description": "The file path in the virtual system. File name must be a full name. e.g. \\file.txt or \\a\\b\\code.py etc."
+        }
+      },
+      "required": [
+          "id",
+          "path"
+      ]
+    }
+  }
+}

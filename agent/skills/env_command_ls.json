@@ -1,0 +1,24 @@
+{
+  "type": "function",
+  "function": {
+    "name": "env_command_ls",
+    "description": "Like the 'ls' or 'dir' commend, it will show the list of a path that you input. The root path is /",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID of the virtual system"
+        },
+        "path": {
+          "type": "string",
+          "description": "The path in virtual system that you want to query the file list."
+        }
+      },
+      "required": [
+          "id",
+          "path"
+      ]
+    }
+  }
+}

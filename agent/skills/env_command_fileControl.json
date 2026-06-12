@@ -1,0 +1,44 @@
+{
+  "type": "function",
+  "function": {
+    "name": "env_command_fileControl",
+    "description": "Control a file or folder. The root path is /",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID of the virtual system"
+        },
+        "path": {
+          "type": "string",
+          "description": "The path in virtual system"
+        },
+        "fileName" : {
+          "type": "string",
+          "description": "The name of the file that you want to create. File name must be a full name. e.g. file.txt or code.py etc."
+        },
+        "controlType" : {
+          "type": "string",
+          "description" : "What control you want to do for this file or folder. You must only select the options from here: w - write File(append mode in python), p - write File, but will over the old data, r - rename, d - delete file, c - change the lines"
+        },
+        "lines" : {
+          "type": "string",
+          "description" : "The lines that you want to change(only use to mode c) format: form - to, e.g. 4 - 21, 3 - 14 (The first line is 1)"
+        },
+        "inf" : {
+          "type": "string",
+          "description" : "The detail information, if you select the writing file, you must write data here. Also, the rename too. If you use mode c, input empty is means delete the lines"
+        }
+      },
+      "required": [
+          "id",
+          "path",
+          "fileName",
+          "lines",
+          "controlType",
+          "inf"
+      ]
+    }
+  }
+}

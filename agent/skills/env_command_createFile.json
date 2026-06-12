@@ -1,0 +1,34 @@
+{
+  "type": "function",
+  "function": {
+    "name": "env_command_createFile",
+    "description": "Create a file or a folder. The root path is /",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID of the virtual system"
+        },
+        "path": {
+          "type": "string",
+          "description": "The path in virtual system"
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the file. It can be file or folder. You only write file or folder in this argument"
+        },
+        "fileName" : {
+          "type": "string",
+          "description": "The name of the file that you want to create. File name must be a full name. e.g. file.txt or code.py etc."
+        }
+      },
+      "required": [
+          "id",
+          "path",
+          "type",
+          "fileName"
+      ]
+    }
+  }
+}
