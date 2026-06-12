@@ -1,8 +1,0 @@
-yaml_version: 0
-
-agent_name: ""
-personality: ""
-chat_style: ""
-
-agent_learning:
-  express_example_sentences: [] #The model will act the personality as expression examples
